@@ -138,14 +138,14 @@ model_rf</code></pre>
 ##                      Number of trees: 10
 ## No. of variables tried at each split: 7
 ## 
-##         OOB estimate of  error rate: 3.29%
+##         OOB estimate of  error rate: 3.17%
 ## Confusion matrix:
 ##      A    B    C    D    E class.error
-## A 4072   35    6   18   13  0.01737452
-## B   47 2673   58   23   20  0.05246367
-## C    6   43 2446   30   13  0.03624901
-## D   11   17   53 2288   18  0.04147465
-## E    5   25   14   24 2617  0.02532588</code></pre>
+## A 4067   39   10    9    9  0.01620706
+## B   51 2665   61   17   23  0.05395811
+## C    4   49 2433   42   12  0.04212598
+## D   11   10   54 2294   11  0.03613445
+## E    7   16   14   12 2631  0.01828358</code></pre>
 <pre class="r"><code>predTest &lt;- predict(model_rf, testing)
 predRight &lt;- predTest == testing$classe
 
@@ -162,7 +162,6 @@ predValidation</code></pre>
 <div id="references" class="section level2">
 <h2>References</h2>
 <p>[1] Velloso, E.; Bulling, A.; Gellersen, H.; Ugulino, W.; Fuks, H. Qualitative Activity Recognition of Weight Lifting Exercises. Proceedings of 4th International Conference in Cooperation with SIGCHI (Augmented Human ’13) . Stuttgart, Germany: ACM SIGCHI, 2013.</p>
-<p>Read more: <a href="http://groupware.les.inf.puc-rio.br/har#ixzz3Rr1uzlNV">http://groupware.les.inf.puc-rio.br/har#ixzz3Rr1uzlNV</a></p>
 </div>
 
 
